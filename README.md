@@ -232,3 +232,39 @@ Based on all results, I identified the most promising models:
 
 For deployment, **XGBoost and LightGBM** are my primary choices, with Random Forest as a backup. This stepwise approach—from baselines to complex models—helps ensure the selected models provide consistent, accurate forecasts at the store-item level.
 
+
+---
+
+
+### Recommendations
+Based on my experiments:  
+- **XGBoost and LightGBM** are the top-performing models for store-item demand forecasting, offering the best accuracy and scalability.  
+- **Random Forest** is a strong alternative, providing interpretability and robust performance with less tuning.  
+- **Ensemble approaches** combining these models can produce even more stable forecasts, balancing the weaknesses of individual models.  
+
+### Limitations
+- Deep learning models (LSTM, GRU) underperformed due to limited sequence design and temporal feature engineering.  
+- Models only leveraged historical sales and basic calendar features. External factors like holidays, promotions, and economic indicators were not included.  
+- Forecasting was done at the individual store-item level; hierarchical effects across stores or categories were not explicitly modeled.  
+
+### Future Work
+- Explore richer **feature engineering**, including advanced lag and rolling statistics, promotion flags, and external covariates.  
+- Test **advanced deep learning architectures** like Temporal Convolutional Networks (TCN) or Transformers for time series.  
+- Investigate **hierarchical forecasting** to jointly model store and item effects.  
+- Apply **explainability tools** (e.g., SHAP) to better understand drivers of forecasted sales.  
+
+### Conclusion
+This project demonstrates that modern ensemble methods, particularly XGBoost and LightGBM, are highly effective for e-commerce demand forecasting. Even modest improvements over naive baselines can lead to meaningful operational and financial impact. Deep learning remains promising but requires more tailored preprocessing and feature engineering.  
+
+---
+
+## Closing Remark  
+
+I am passionate about using data to solve real business problems and drive measurable value.  
+
+I am open to exploring full-time opportunities where I can contribute to business strategy through analytics, as well as freelance collaborations with organizations seeking to leverage data for smarter decision-making.
+
+---
+
+📌 Author: [Osaretin Idiagbonmwen](https://www.linkedin.com/in/osaretin-idiagbonmwen-33ab85339)  
+📩 Email: oidiagbonmwen@gmail.com  
