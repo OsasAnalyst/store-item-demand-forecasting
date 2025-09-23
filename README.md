@@ -9,7 +9,7 @@
 # Executive Summary
 
 For e-commerce businesses, **knowing how much of each product to stock and when** is critical. Poor demand forecasts lead to two expensive problems:  
-- **Stockouts** → lost sales and unhappy customers  
+- **Stockouts** → lost sales and unhappy customers 
 - **Overstocking** → wasted storage and tied-up capital  
 
 In this project, I tackled the **Store Item Demand Forecasting** challenge using historical sales data from multiple stores and products. The goal was to move beyond simple heuristics like moving averages and instead build **robust, data-driven forecasting models**.
