@@ -164,8 +164,6 @@ These engineered features give my models the information they need to make accur
 
 ---
 
----
-
 # Modeling Approach
 
 I approached forecasting by starting simple and gradually moving to more complex models. This stepwise method helps me understand how much each layer of complexity improves accuracy and ensures I do not overfit the data.
