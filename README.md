@@ -41,7 +41,7 @@ Key goals:
    - Identify models suitable for real-world deployment.  
    - Show how better forecasts directly support **inventory planning, promotions, and supply chain efficiency**.  
 
-📌 By achieving these objectives, the project demonstrates how data science can solve a **real-world retail problem** with clear financial impact.  
+By achieving these objectives, the project demonstrates how data science can solve a **real-world retail problem** with clear financial impact.  
 
 ---
 
