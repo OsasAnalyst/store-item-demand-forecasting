@@ -1,6 +1,7 @@
 # 🛒 Store Item Demand Forecasting
 
-![Demand Forecasting](https://github.com/user-attachments/assets/0cfa3a8b-forecasting-banner-example)  
+(![Demand Forecasting](https://github.com/user-attachments/assets/a582c0b6-555e-4bc9-8336-61217983b603)
+  
 *Building smarter demand forecasts to cut stockouts, reduce overstocking, and improve e-commerce efficiency.*
 
 ---
