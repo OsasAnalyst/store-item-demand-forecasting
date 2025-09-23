@@ -96,7 +96,7 @@ Before building forecasting models, I performed an exploratory analysis of the d
 
 Each store shows relatively similar overall demand, with no extreme outliers.   
 
-![Store-Level Sales]("https://github.com/user-attachments/assets/9e3820b0-6534-46cc-9aec-014de30e77d2")
+![Store-Level Sales](https://github.com/user-attachments/assets/9e3820b0-6534-46cc-9aec-014de30e77d2)
 
 ---
 
@@ -107,7 +107,7 @@ Aggregating across all stores and items, sales show **clear weekly and yearly se
 - Yearly cycles → higher demand during certain months (e.g., holidays).  
 
 
-![Total Daily Sales]("https://github.com/user-attachments/assets/d811b60d-2024-4ed4-81e3-830f01e4f0fe")
+![Total Daily Sales](https://github.com/user-attachments/assets/d811b60d-2024-4ed4-81e3-830f01e4f0fe)
 
 ---
 
@@ -118,7 +118,8 @@ Individual items show diverse sales behaviors:
 - Others exhibit **strong seasonality** or **sporadic spikes**.  
  
 
-![Sample Item Sales]("https://github.com/user-attachments/assets/080f33f3-43a2-45f6-af32-9dbef5992757")
+![Sample Item Sales](https://github.com/user-attachments/assets/080f33f3-43a2-45f6-af32-9dbef5992757)
+
 
 ---
 
