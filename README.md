@@ -61,7 +61,6 @@ Steps:
 
 This dataset is ideal for testing both **time series forecasting techniques** and **supervised learning approaches**, since it captures seasonality, store effects, and item-specific demand patterns.  
 
----
 
 ---
 
@@ -123,10 +122,6 @@ Individual items show diverse sales behaviors:
 
 ---
 
-
----
-
----
 
 # Feature Engineering
 
