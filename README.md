@@ -1,6 +1,6 @@
 # 🛒 Store Item Demand Forecasting
 
-![Demand Forecasting](https://github.com/OsasAnalyst/store-item-demand-forecasting/blob/main/Demand-Forecasting-Types-1024x576.jpg?raw=true)
+![Demand Forecasting](https://raw.githubusercontent.com/OsasAnalyst/store-item-demand-forecasting/main/Demand-Forecasting-Types-1024x576.jpg)
   
 *Building smarter demand forecasts to cut stockouts, reduce overstocking, and improve e-commerce efficiency.*
 
