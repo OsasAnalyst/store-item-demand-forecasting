@@ -124,3 +124,46 @@ Individual items show diverse sales behaviors:
 ---
 
 
+---
+
+---
+
+# Feature Engineering
+
+Before building forecasting models, the raw sales data needed to be transformed so I could use it effectively.
+
+### Making the Data Stationary
+I first checked if the sales series was stationary, which means it doesn’t have trends or big changes over time. Using a statistical test, I found it was not stationary. To fix this, I applied a **log transformation** to stabilize the variance and then **differencing** to remove trends. After this, the data became stationary and ready for classical models like ARIMA.
+
+### Creating Time-Based Features
+For machine learning models, I added new features from the date:  
+- **Year, month, day** → to capture seasonal effects.  
+- **Day of the week** → to capture weekday/weekend patterns.  
+- **Week of the year** → to detect yearly trends.  
+- **Weekend flag** → to separate weekend behavior from weekdays.  
+
+These features help the models understand patterns in the sales data that repeat over time.
+
+### Scaling Sales Values
+I also scaled the raw sales values to make the numbers easier for machine learning models to work with. Scaling ensures that one feature does not dominate the model because of its size.
+
+### Lag and Rolling Features
+I created features that capture past sales information:  
+- **Lag features** → yesterday’s sales, last week’s sales, and other past days.  
+- **Rolling averages** → average sales over the last 7, 14, or 28 days.  
+
+These features help the models learn short-term and medium-term patterns in sales.
+
+### Consistent Processing
+I applied all these steps in a **single preprocessing routine** so that train, validation, and test sets are treated the same way. The lag and rolling features were computed carefully so that no future information leaks into past data.
+
+### Final Dataset
+After feature engineering, the data was split into **train, validation, and test sets**, with input features (`X`) and target sales (`y`) ready for model training. This dataset includes:  
+- Store and item identifiers  
+- Time-based features  
+- Lag and rolling features  
+- Scaled sales values for machine learning  
+
+These engineered features give my models the information they need to make accurate sales predictions at the store-item level.
+
+
