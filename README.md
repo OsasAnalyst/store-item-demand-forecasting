@@ -167,3 +167,68 @@ After feature engineering, the data was split into **train, validation, and test
 These engineered features give my models the information they need to make accurate sales predictions at the store-item level.
 
 
+---
+
+---
+
+# Modeling Approach
+
+I approached forecasting by starting simple and gradually moving to more complex models. This stepwise method helps me understand how much each layer of complexity improves accuracy and ensures I do not overfit the data.
+
+### Baseline Models
+I began with **naive forecasts** as sanity checks:  
+- **Naive Forecast** → RMSE: 31.98, MAE: 26.49  
+- **Mean Forecast** → RMSE: 32.50, MAE: 25.26  
+
+These baselines provide reference points. Any model performing worse than these is not useful in practice.
+
+### Classical Statistical Models
+Next, I tested **ARIMA** and **SARIMA** models to capture autocorrelation and seasonality:
+
+- **ARIMA(2,1,2)** → RMSE: 10,075.41, MAE: 8,376.17  
+  ARIMA captures trends well but struggles with seasonality in this dataset.
+
+- **SARIMA(2,1,2)(0,1,1,7)** → RMSE: 10,833.98, MAE: 9,412.99  
+  SARIMA incorporates weekly seasonality, but in this case it performed worse than ARIMA. This suggests that the seasonal patterns may not be strong enough or require further tuning.
+
+Overall, classical models provide insights into temporal structure but do not scale efficiently to large store-item datasets.
+
+### Machine Learning Models
+I then treated forecasting as a **supervised learning problem**, using engineered features like calendar variables, lags, rolling averages, and scaled sales values. The validation results were:
+
+| Model             | MAE  | RMSE  |
+| ----------------- | ---- | ----- |
+| Linear Regression | 9.59 | 12.90 |
+| Ridge Regression  | 9.59 | 12.90 |
+| Random Forest     | 6.78 | 2.60  |
+| XGBoost           | 6.12 | 7.95  |
+| LightGBM          | 6.13 | 7.95  |
+
+Tree-based ensemble models clearly outperform linear models. XGBoost and LightGBM consistently achieve the lowest errors. Random Forest is close behind, making it a strong alternative.
+
+### Deep Learning Models
+I also tested **deep learning models** using the Keras Functional API, including:
+
+- Dense Feedforward Neural Network  
+- LSTM  
+- GRU  
+
+Input features included time-based and lagged variables. The results were:
+
+| Model    | MAE   | RMSE  |
+| -------- | ----- | ----- |
+| Dense NN | 7.49  | 9.68  |
+| LSTM     | 25.25 | 32.43 |
+| GRU      | 25.26 | 32.47 |
+
+The Dense NN performed reasonably but did not beat tree-based ensembles. LSTM and GRU struggled in this setup, likely due to sequence preparation or hyperparameters.
+
+### Model Evaluation and Shortlisting
+Based on all results, I identified the most promising models:
+
+- **XGBoost and LightGBM** → Best overall performers, lowest MAE and RMSE  
+- **Random Forest** → Reliable backup, interpretable, less sensitive to tuning  
+- **Dense NN** → Serves as a deep learning benchmark  
+
+For deployment, **XGBoost and LightGBM** are my primary choices, with Random Forest as a backup. This stepwise approach—from baselines to complex models—helps ensure the selected models provide consistent, accurate forecasts at the store-item level.
+
