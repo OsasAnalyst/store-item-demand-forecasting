@@ -122,7 +122,7 @@ To move from prototype to production-grade forecasting, the following enhancemen
 ```
 ├── data/
 │   ├── forcasting.db               
-│   ├── raw_sales_data.csv           
+│   ├── demand_forecasting.zip           
 │
 ├── python_notebook/
 │   ├── demand_forecasting.ipynb      
