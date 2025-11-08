@@ -119,7 +119,7 @@ To move from prototype to production-grade forecasting, the following enhancemen
 ---
 
 ## 🧱 Repository Structure
-
+```
 ├── data/
 │   ├── forcasting.db               
 │   ├── raw_sales_data.csv           
@@ -150,7 +150,7 @@ To move from prototype to production-grade forecasting, the following enhancemen
 │   ├── seasonal_pattern_example.png
 │
 └── README.md
-
+```
 ---
 
 ## 📫 Contact
