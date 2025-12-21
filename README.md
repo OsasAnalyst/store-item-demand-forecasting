@@ -1,4 +1,4 @@
-# 🏬 Store Item Demand Forecasting: Predictive Intelligence for Retail Operations
+# Store Item Demand Forecasting: Predictive Intelligence for Retail Operations
 
 This repository presents a complete **data science and business intelligence project** focused on building a reliable, automated **demand forecasting system** for a multi-store retail business. The project integrates **machine learning modeling**, **data automation**, and an interactive **Power BI dashboard**, providing decision-makers with accurate, actionable insights to improve inventory management and sales planning.
 
@@ -43,7 +43,7 @@ An SQLite database acts as the data hub - combining processed datasets, predicti
 
 ---
 
-## ⚙️ Work Overview: End-to-End Pipeline
+## Work Overview: End-to-End Pipeline
 
 The workflow follows a full machine learning lifecycle from raw data to visualization.
 
@@ -65,7 +65,7 @@ The workflow follows a full machine learning lifecycle from raw data to visualiz
 
 ---
 
-## 🧮 Model Performance
+## Model Performance
 
 The ensemble-based approach consistently outperformed individual models, offering strong predictive stability and reliability.
 
@@ -96,15 +96,15 @@ The ensemble-based approach consistently outperformed individual models, offerin
 
 To move from prototype to production-grade forecasting, the following enhancements are planned:
 
-- **🔄 Live Data Automation:** Integrate a continuous data pipeline and enable automatic retraining.  
-- **🌐 API Deployment:** Serve forecasts via a REST API to business systems (ERP/WMS).  
-- **📈 Hierarchical Forecasting:** Expand from store-item forecasts to regional or category-level analysis.  
-- **🧠 External Feature Expansion:** Include external factors like promotions, seasonality events, or weather data.  
-- **🧪 Continuous Evaluation:** Automate performance tracking using Power BI alerts and monitoring dashboards.
+- ** Live Data Automation:** Integrate a continuous data pipeline and enable automatic retraining.  
+- ** API Deployment:** Serve forecasts via a REST API to business systems (ERP/WMS).  
+- ** Hierarchical Forecasting:** Expand from store-item forecasts to regional or category-level analysis.  
+- ** External Feature Expansion:** Include external factors like promotions, seasonality events, or weather data.  
+- ** Continuous Evaluation:** Automate performance tracking using Power BI alerts and monitoring dashboards.
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 | :---------------- | :----------------------------------------------------------- |
@@ -118,7 +118,7 @@ To move from prototype to production-grade forecasting, the following enhancemen
 
 ---
 
-## 🧱 Repository Structure
+## Repository Structure
 ```
 ├── data/
 │   ├── forcasting.db               
@@ -153,18 +153,18 @@ To move from prototype to production-grade forecasting, the following enhancemen
 ```
 ---
 
-## 📫 Contact
+## Contact
 
 If you’re interested in collaboration, feedback, or have questions about this project, feel free to reach out.
 
 | Detail            | Information                                                                                   |
 | :---------------- | :-------------------------------------------------------------------------------------------- |
-| 👤 **Author**     | [Osaretin Idiagbonmwen](https://www.linkedin.com/in/osaretin-idiagbonmwen-33ab85339)          |
-| 📧 **Email**      | [oidiagbonmwen@gmail.com](mailto:oidiagbonmwen@gmail.com)                                     |
-| 🐙 **GitHub**     | [OsasAnalyst](https://github.com/OsasAnalyst)                                                 |
-| 📂 **Repository** | [Store Item Demand Forecasting](https://github.com/OsasAnalyst/store-item-demand-forecasting) |
+| **Author**     | [Osaretin Idiagbonmwen](https://www.linkedin.com/in/osaretin-idiagbonmwen-33ab85339)          |
+|  **Email**      | [oidiagbonmwen@gmail.com](mailto:oidiagbonmwen@gmail.com)                                     |
+|  **GitHub**     | [OsasAnalyst](https://github.com/OsasAnalyst)                                                 |
+|  **Repository** | [Store Item Demand Forecasting](https://github.com/OsasAnalyst/store-item-demand-forecasting) |
 
 ---
 
-⭐ *If you found this project useful, consider starring the repository to support more open-source data science projects like this!*
+ *If you found this project useful, consider starring the repository to support more open-source data science projects like this!*
 
